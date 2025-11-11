@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Course</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <h1>Kickstart Your Technical Career</h1>
+
+    <div>
+        <form action="http://localhost:8081/courses/register" method="post">
+            <label for="name">Enter Your Name</label>
+            <input type="text" name="name"><br><br>
+
+            <label for="email">Enter Your EmailId</label>
+            <input type="text" name="emailid"><br><br>
+
+            <label for="coursename">Choose Your CourseName</label><br>
+            <select name="coursename" id="coursename">
+                <option value="Java Essential">Core Java</option>
+                <option value="Python with ML">Python With ML</option>
+                <option value="Spring Boot">Spring Boot</option>
+                <option value="Mern Stack">MERN Stack</option>
+                <option value="Data Analyst">Data Analyst</option>
+            </select>
+            <br><br>
+            <button type="submit">Sumbit</button>
+        </form>
+    </div>
+</body>
+</html>
